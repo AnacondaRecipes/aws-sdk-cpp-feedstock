@@ -10,7 +10,7 @@ source:
   sha256: f766b08b2e681367d8dec8c6dd0d904998cf19593fbf424a8a480db631672b5e
   patches:
     # Pass CMAKE_INSTALL_LIBDIR to dependencies as well
-    - 0001-fix-libdir-for-deps.patch
+    #- 0001-fix-libdir-for-deps.patch
     - 0002-force-openssl-use.patch  # [unix]
 
 build:
