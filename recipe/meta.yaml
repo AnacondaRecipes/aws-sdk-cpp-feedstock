@@ -43,7 +43,7 @@ test:
     - {{ compiler('cxx') }}
     - ninja-base
     - make  # [unix]
-  # test commands in run_test.{sh,bat} files.
+  # test commands in run_test.{sh,bat} files
 
 about:
   home: https://github.com/aws/aws-sdk-cpp
