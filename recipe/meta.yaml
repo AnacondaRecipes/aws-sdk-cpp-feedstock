@@ -29,7 +29,7 @@ requirements:
     - aws-c-event-stream 0.2.15
     - aws-crt-cpp 0.18.16
     - aws-checksums 0.1.13
-    - libcurl 8.9.1
+    - libcurl {{ libcurl }}
     - openssl {{ openssl }}  # [linux]
     - zlib  {{ zlib }}
 
