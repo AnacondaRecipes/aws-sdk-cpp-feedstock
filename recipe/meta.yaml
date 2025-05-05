@@ -1,5 +1,5 @@
 {% set name = "aws-sdk-cpp" %}
-{% set version = "1.11.212" %}
+{% set version = "1.11.528" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,12 @@ package:
 
 source:
   url: https://github.com/aws/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 891b0b7107c942e6413e8b46ea41c5e9b856d6b984dfcce275d1688ab55d21ef
+  sha256: c805b65a76d48995b04c6d6ec3f94c71c34c0e068afd40ef43897e212b871938
 
 build:
   number: 0
   run_exports:
     - {{ pin_subpackage("aws-sdk-cpp", max_pin="x.x.x") }}
-  missing_dso_whitelist:
-    - '$RPATH/ld64.so.1'  # [s390x]
 
 requirements:
   build:
@@ -23,14 +21,11 @@ requirements:
     - {{ compiler('cxx') }}
     - ninja-base
     - make  # [unix]
-
   host:
-    - aws-c-common 0.8.5
-    - aws-c-event-stream 0.2.15
-    - aws-crt-cpp 0.18.16
-    - aws-checksums 0.1.13
+    - aws-c-common 0.11.1
+    - aws-c-event-stream 0.5.4
+    - aws-crt-cpp 0.31.0
     - libcurl {{ libcurl }}
-    - openssl {{ openssl }}  # [linux]
     - zlib  {{ zlib }}
 
 test:
