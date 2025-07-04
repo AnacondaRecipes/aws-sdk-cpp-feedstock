@@ -23,10 +23,10 @@ requirements:
     - make  # [unix]
   host:
     - aws-c-common 0.12.3
-    - aws-c-event-stream 0.5.4
-    - aws-crt-cpp 0.31.0
-    - libcurl {{ libcurl }}
-    - zlib  {{ zlib }}
+    - aws-c-event-stream 0.5.5
+    - aws-crt-cpp 0.32.10
+    - libcurl
+    - zlib
 
 test:
   files:
