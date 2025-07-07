@@ -10,7 +10,7 @@ source:
   sha256: c805b65a76d48995b04c6d6ec3f94c71c34c0e068afd40ef43897e212b871938
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage("aws-sdk-cpp", max_pin="x.x.x") }}
 
@@ -22,9 +22,9 @@ requirements:
     - ninja-base
     - make  # [unix]
   host:
-    - aws-c-common 0.11.1
-    - aws-c-event-stream 0.5.4
-    - aws-crt-cpp 0.31.0
+    - aws-c-common 0.12.3
+    - aws-c-event-stream 0.5.5
+    - aws-crt-cpp 0.32.10
     - libcurl {{ libcurl }}
     - zlib  {{ zlib }}
 
