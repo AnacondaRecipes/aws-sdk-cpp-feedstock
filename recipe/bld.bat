@@ -18,7 +18,7 @@ cmake -LAH -G "Ninja" ^
       -DFORCE_CURL=ON ^
       -DCURL_HAS_H2=ON ^
       -DCURL_HAS_TLS_PROXY=ON ^
-      -DSIMPLE_INSTALL=OFF ^
+      -DCMAKE_POLICY_DEFAULT_CMP0177=OLD ^
       ..
 if errorlevel 1 exit 1
 
