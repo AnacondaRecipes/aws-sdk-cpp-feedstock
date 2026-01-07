@@ -18,7 +18,7 @@ cmake -LAH -G "Ninja" ^
       -DFORCE_CURL=ON ^
       -DCURL_HAS_H2=ON ^
       -DCURL_HAS_TLS_PROXY=ON ^
-      -DLEGACY_BUILD=OFF ^
+      -DSIMPLE_INSTALL=OFF ^
       ..
 if errorlevel 1 exit 1
 
