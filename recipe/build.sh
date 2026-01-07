@@ -9,6 +9,7 @@ cmake ${CMAKE_ARGS} .. -GNinja \
   -DCMAKE_INSTALL_LIBDIR=lib \
   -DCMAKE_MODULE_PATH="${PREFIX}/lib/cmake" \
   -DBUILD_ONLY='s3;core;transfer;config;identity-management;sts;sqs;sns;monitoring;logs' \
+  -DAWS_SDK_WARNINGS_ARE_ERRORS=OFF \
   -DENABLE_UNITY_BUILD=ON \
   -DENABLE_TESTING=OFF \
   -DCMAKE_BUILD_TYPE=Release \
