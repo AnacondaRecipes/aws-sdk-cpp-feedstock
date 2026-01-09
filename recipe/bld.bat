@@ -7,6 +7,7 @@ pushd "%SRC_DIR%"\build
 cmake -LAH -G "Ninja" ^
       -DCMAKE_INSTALL_PREFIX="%LIBRARY_PREFIX%" ^
       -DCMAKE_INSTALL_LIBDIR=lib ^
+      -DCMAKE_INSTALL_BINDIR=bin ^
       -DCMAKE_MODULE_PATH:PATH="%LIBRARY_LIB%\cmake" ^
       -DAWS_SDK_WARNINGS_ARE_ERRORS=OFF ^
       -DBUILD_ONLY="s3;core;transfer;config;identity-management;sts;sqs;sns;monitoring;logs" ^
