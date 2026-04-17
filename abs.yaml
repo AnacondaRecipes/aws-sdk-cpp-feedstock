@@ -1,0 +1,9 @@
+channels:
+  - https://staging.continuum.io/preprod-pbp/fs/aws-c-io-feedstock/pr7/928beff
+  - https://staging.continuum.io/preprod-pbp/fs/aws-c-compression-feedstock/pr6/8a902d3
+  - https://staging.continuum.io/preprod-pbp/fs/aws-c-http-feedstock/pr7/c623fb1
+  - https://staging.continuum.io/preprod-pbp/fs/aws-c-auth-feedstock/pr7/15f9a47
+  - https://staging.continuum.io/preprod-pbp/fs/aws-c-mqtt-feedstock/pr7/772b912
+  - https://staging.continuum.io/preprod-pbp/fs/aws-c-event-stream-feedstock/pr10/f10fc1d
+  - https://staging.continuum.io/preprod-pbp/fs/aws-c-s3-feedstock/pr8/f579a73
+  - https://staging.continuum.io/preprod-pbp/fs/aws-crt-cpp-feedstock/pr7/2b4df17
