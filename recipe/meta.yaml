@@ -10,7 +10,7 @@ source:
   sha256: d31bae2a7e86547c7235456510bc92a62a52a39098119366ac80c1ef6101facb
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage("aws-sdk-cpp", max_pin="x.x.x") }}
 
@@ -24,7 +24,7 @@ requirements:
     - make  # [unix]
   host:
     - aws-c-common 0.12.6
-    - aws-c-event-stream 0.6.0
+    - aws-c-event-stream 0.6.1
     - aws-crt-cpp 0.37.4
     - libcurl {{ libcurl }}
     - zlib  {{ zlib }}
