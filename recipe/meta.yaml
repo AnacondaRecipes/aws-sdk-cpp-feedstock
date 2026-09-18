@@ -1,5 +1,5 @@
 {% set name = "aws-sdk-cpp" %}
-{% set version = "1.11.826" %}
+{% set version = "1.11.895" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://github.com/aws/{{ name }}/archive/{{ version }}.tar.gz
-    sha256: bc848a0f20515b5e16a109cfb3e1857d07495dcd0f3918986839c6c0fe709ee6
+    sha256: b9be6ea80684195e3afec91602433c444d601062e23184eccf10ecaacc785e37
 
 build:
   number: 0
@@ -23,9 +23,9 @@ requirements:
     - ninja-base
     - make  # [unix]
   host:
-    - aws-c-common 0.14.0
+    - aws-c-common 0.14.5
     - aws-c-event-stream 0.7.1
-    - aws-crt-cpp 0.40.1
+    - aws-crt-cpp 0.43.6
     - libcurl {{ libcurl }}
     - zlib  {{ zlib }}
 
